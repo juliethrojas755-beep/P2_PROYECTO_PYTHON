@@ -26,28 +26,25 @@ def  menu_inscripcion ():
          break
        case _:
          print ("Opcion invalida")
+         
+def menu_ver_notas():
+   while True:
+      print ("|n----VER NOTAS----")
+      print ("1.General ")
+      print ("2. Por modulo")
+      print ("3. Regresar")
+      opcion = input ("Seleccione una opcion:")
 
-def menu_trainer ():
-  while True:
-     print ("n|=============MENU TRAINER=============")
-     print("1. Ver ruta asignada")
-     print ("2. Registrar notas")
-     print ("3. Ver campers asignados")    
-     print ("4. Volver")
-   
-     opcion = input ("Seleccione una opcion:")
-
-    
-     match opcion:
+      match opcion:
         case 1:
+          print("Notas generales (:)")
 
-         print ("Esta es tu ruta asignada ")
         case 2:
-         print ("Registro de notas...")
-        case 3: 
-         print ("Campers asignados")
-        case 4:
-         break
+          print ("Notas por modulo (:)")
+        case 3:
+          break
         case _:
-         print ("Opcion invalida")
- 
+          print ("Opcion invalida")
+          
+  
+  
