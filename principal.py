@@ -45,6 +45,28 @@ def menu_ver_notas():
           break
         case _:
           print ("Opcion invalida")
+
+def menu_sesion_camper():
+  while True:
+    print ("n|----SESION CAMPER-----")
+    print ("1.Realizar prueba inicial")
+    print ("3.Ver notas ")
+    print ("4. Solicitar retiro volutanrio")
+    print("5. Regresar")
+
+    opcion = input ("Seleccione una opcion: ")
+
+    match opcion:
+      case 1:
+        print ("Prueba inicial (:)")
+      case 2:
+        print ("Horario (:)")
+      case 3: 
+        menu_ver_notas
+      case 4:
+        print ("Retiro voluntario solicitado (:)")
+      case 5:
+        break
+      case _:
+        print ("Opcion invalida")
           
-  
-  
