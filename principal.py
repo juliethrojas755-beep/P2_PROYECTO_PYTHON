@@ -36,4 +36,18 @@ def menu_trainer ():
      print ("4. Volver")
    
      opcion = input ("Seleccione una opcion:")
-     
+
+    
+     match opcion:
+        case 1:
+
+         print ("Esta es tu ruta asignada ")
+        case 2:
+         print ("Registro de notas...")
+        case 3: 
+         print ("Campers asignados")
+        case 4:
+         break
+        case _:
+         print ("Opcion invalida")
+ 
