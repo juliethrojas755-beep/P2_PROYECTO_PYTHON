@@ -149,3 +149,22 @@ def menu_modulo_academico():
       case _:
         print ("Opcion invalida")
 
+def menu_trainer():
+  while True:
+    print ("|n------MENU TRAINER-----")
+    print ("1. Informacion personal")
+    print ("2. Modulo academico")
+    print ("3: Regresar")
+
+    opcion=input ("Seleccione una opcion:")
+    match opcion:
+      case 1:
+        print("Imformacion personal ()")
+      case 2:
+        menu_modulo_academico ()
+      case 3:
+        break
+      case _:
+        print("Opcion invalida")
+        
+        
