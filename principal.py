@@ -92,4 +92,26 @@ def menu_camper():
       case _:
         print ("Opcion invalida")
 
-        
+def menu_modulos ():
+  while True:
+    print ("|n-----SELECCIONE MODULO")
+    print ("1. Introduccion a la programacion")
+    print ("2. Bakend")
+    print ("3.Bases de datos")
+    print ("4. Regresar")
+
+    opcion = input ("Seleccione una opcion: ")
+    match opcion :
+       case 1  | 2 | 3 :
+        print ("Registrar notas")
+        print ("-Examen practico")
+        print ("Examen teorico ")
+        print ("-Actividades")
+       case 4:
+        break
+       case _:
+        print ("Opcion invalida")
+
+
+
+
