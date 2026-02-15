@@ -112,6 +112,22 @@ def menu_modulos ():
        case _:
         print ("Opcion invalida")
 
+def menu_registrar_notas():
+  while True:
+    print ("|n---REGISTRAR CALIFICACIONES-----")
+    print ("1.Por camper")
+    print ("2.Por grupo")
+    print ("3. Regresar")
 
+    opcion= input ("Seleccione ua opcion:")
+    match opcion:
+     case 1:
+        menu_modulos()
+     case 2:
+        menu_modulos()
+     case 3:
+        break
+     case _:
+        print ("Opcion invalida")
 
 
