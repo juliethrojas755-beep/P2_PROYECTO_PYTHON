@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def menu_principal ():
     while True:
       print ("=======CAMPUSLANDS===========")
@@ -17,13 +18,19 @@ def menu_principal ():
             print("Entrando al menu del coordinador")
 
 def  menu_camper ():
+=======
+#=================================
+#=== MENU INSCRIPCION CAMPER=====
+#=================================
+
+def  menu_inscripcion ():
+>>>>>>> 72a1455 (Submenu inscripcion del camper)
    while True:
-      print ("n|========MENU CAMPER============")
-      print ("1.Ver mis datos ")
-      print ("2.Ver estado academico ")
-      print ("3.Ver Ruta")
-      print ("4. Volver")
-      
+      print ("n|=======INSCRIPCION============")
+      print ("1. Ingreso de identidad ")
+      print ("2.Agendar prueba iniciial")
+      print ("3.Revisar fecha prueba inical")
+      print ("4.Salir")
 
 
       opcion = input ("Seleccione una opcion: ")
@@ -31,14 +38,13 @@ def  menu_camper ():
       match opcion:
 
        case 1:
-        print("Monstrando tus datos ")
+        print("Ingreso de identidad (:) ")
         
        case 2:
-        print("Mostrando tu estado academico")
-
-       case 3:
-        print ("Mostando tu ruta ")
-
+        print("Agendar prueba inicial (:)")
+      
+       case 3: 
+        print ("Revisar fecha prueba inicial (:)")
        case 4:
          break
        case _:
@@ -56,6 +62,20 @@ def menu_trainer ():
     
      match opcion:
         case 1:
+<<<<<<< HEAD
          print
        #sfsfsdfs
 >>>>>>> d90d2eb264fa678a03541df21feb29e2bd5545f4
+=======
+         print ("Esta es tu ruta asignada ")
+        case 2:
+         print ("Registro de notas...")
+        case 3: 
+         print ("Campers asignados")
+        case 4:
+         break
+        case _:
+         print ("Opcion invalida")
+             
+       
+>>>>>>> 72a1455 (Submenu inscripcion del camper)
