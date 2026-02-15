@@ -69,4 +69,27 @@ def menu_sesion_camper():
         break
       case _:
         print ("Opcion invalida")
-          
+
+def menu_camper():
+  while True:
+    print("|n------MENU CAMPER------")
+    print ("1. Inscripcion")
+    print ("2. Ver informacion personal")
+    print ("3. Iniciar sesion")
+    print ("4. Regresar")
+
+    opcion = input ("Seleccione una opcion: ")
+
+    match opcion:
+      case 1:
+        menu_inscripcion ()
+      case 2:
+        print ("Imformacion personal")
+      case 3:
+        menu_sesion_camper ()
+      case 4:
+        break
+      case _:
+        print ("Opcion invalida")
+
+        
