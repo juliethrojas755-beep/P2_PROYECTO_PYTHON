@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import json
-=======
-
-
-
 def menu_principal ():
     while True:
       print ("=======CAMPUSLANDS===========")
