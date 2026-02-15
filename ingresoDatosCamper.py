@@ -34,6 +34,9 @@ def registrarCamper():
         if not camper["IDcamper"].isdigit():
             print("digite unicamente numeros ")
             continue
+        if not 8<=len(camper["IDcamper"])<=10:
+            print("El ID debe tener entre 8 y 10 numeros")
+            continue
         if campers:#mira si la lista está vacia
             IDs=[i["IDcamper"] for i in campers]#Lista de todos los ID de los campers
             for i in IDs:
@@ -41,7 +44,7 @@ def registrarCamper():
                     print("este numero de ID ya está registrado en el sistema. intentelo nuevamente")
                     bandera=0
                     break
-            if bandera:
+        if bandera:
                 break
     #Direccion
     camper["direccion"]=input("digite su direccion de residencia: ")
@@ -70,11 +73,27 @@ def registrarCamper():
         else:
             print(f"Algo salió mal,intentelo nuevamente.\nRecuerde que:\n-digite unicamente numeros\n-deben ser 7 numeros\n-digite 0 si no tiene numero fijo ")
 
+    #jornada
+    while(True):
+        print("Campusland cuenta con 2 jornadas, las cuales son:")
+        print(f"1. Mañana (6am-2pm)\n2.Tarde(2pm-10pm)")
+        camper["jornada"]=input(f"Digite el numero de la jornada que le interesa.\ndigite 0 en caso de que ambas jornadas le sirvan: ")
+        if camper["jornada"] in ["0","1","2"]:
+            break
+        else:
+            print("ERROR:Digitó una opcion invalida. Intentelo de nuevo")
+    
     #----------LLAVES CON VALOR NULO (none):
 
     #estado
     camper["estado"]="en proceso de ingreso"  
-        
+    
+    #grupo
+    camper["IDgrupo"]=None
+    
+    #llamada de atencion
+    camper["llamadaAtencion"]=[]
+    
     #riesgo
     camper["riesgo"]=None
 
@@ -90,9 +109,12 @@ def registrarCamper():
     #Clave
     camper["clave"]="123456789"
 
+    #ingreso del estudiante a la base de datos
     campers.append(camper)
 
     print(campers)
 
     #actualizar la base de datos de campers
     guardarLeerJSON.guardarJSON("campers.json",campers)
+    
+registrarCamper()
