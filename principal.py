@@ -166,5 +166,34 @@ def menu_trainer():
         break
       case _:
         print("Opcion invalida")
-        
+
+def menu_coordinacion():
+  while True:
+    print ("|n------MENU COORDINACION-----")
+    print ("1. Trainer (CRUD)")
+    print ("2.Camper (CRUD)")
+    print ("3.Modulo Reportes")
+    print ("4.Modulo de matricula")
+    print ("5. Agregar ruta")
+    print ("6. Salir")
+
+    opcion= input ("Seleccione una opcion: ")
+
+    match opcion:
+      case 1:
+        print ("Crud trainer ()")
+      case 2:
+        print ("Crud camper ()")
+      case 3: 
+        print("Modulo de reportes")
+      case 4:
+        print ("Modulo de matricula")
+      case 5:
+        print ("Agregando ruta")
+      case 6:
+        break
+      case _:
+        print ("Opcion invalida")
+
+
         
