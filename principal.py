@@ -72,9 +72,10 @@ def menu_sesion_camper():
   while True:
     print ("n|----SESION CAMPER-----")
     print ("1.Realizar prueba inicial")
-    print ("3.Ver notas ")
-    print ("4. Solicitar retiro volutanrio")
-    print("5. Regresar")
+    print ("2.Ver horario ")
+    print ("3. Ver notas")
+    print("4. Solicitar retiro voluntario")
+    print ("5. Regresar")
 
     opcion = input ("Seleccione una opcion: ")
 
