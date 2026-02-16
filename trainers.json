@@ -1,7 +1,8 @@
 [
     {
-     "IDtrainer":"91256838",
+     "ID":"91256838",
      "nombre": "Pedro ",
+     "clave " :"123456789",
      "especiallidad": "Nodel JS, Java, CH",
      "horario":{
         "6am - 10am":null,
@@ -9,16 +10,18 @@
         "2pm - 6pm": null   }
     },
     {
-     "IDtrainer": "1059689436",
+     "ID": "1059689436",
      "nombre": "Edwin",
+     "clave ":"123456789",
      "especiallidad": "Java , Netcore",
      "horario": {
         "6am - 10am":null,
         "10am - 2pm " :null }
     },
     {
-     "IDtrainer": "934587032",
+     "ID": "934587032",
      "nombre": "Jhover",
+     "clave ": "123456789",
      "especiallidad": "Java , Netcore",
      "horario":{
         "6am - 10am":null,
@@ -26,8 +29,9 @@
      }
     },
     {
-        "IDtrainer": "37492855",
+        "ID": "37492855",
         "nombre": "Cristian",
+        "clave ": "123456789",
         "especiallidad":"Java, NodelJS",
         "horario":{
             "10am - 2pm ":null,
@@ -36,8 +40,9 @@
 
     },
     {
-        "IDtrainer" :"47239055",
+        "ID" :"47239055",
         "nombre":"Carlos",
+        "clave ": "123456789",
         "especiallidad": "Java",
         "horario":{
             "2pm - 6pm":null,
@@ -45,8 +50,9 @@
         }
     },
     {
-        "IDtrainer":"9134569",
+        "ID":"9134569",
         "nombre": "David",
+        "clave ":"123456789",
         "especiallidad": "Java",
         "horario": {
             "6am - 10am":null,
