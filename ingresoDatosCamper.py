@@ -112,9 +112,6 @@ def registrarCamper():
     #ingreso del estudiante a la base de datos
     campers.append(camper)
 
-    print(campers)
-
     #actualizar la base de datos de campers
     guardarLeerJSON.guardarJSON("campers.json",campers)
     
-registrarCamper()

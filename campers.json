@@ -42,5 +42,49 @@
             "definitiva": null
         },
         "clave": "123456789"
+    },
+    {
+        "nombre": "carlos",
+        "apellido": "andres",
+        "ID": "1098787123",
+        "direccion": "diagonal 14 #2067",
+        "acudiente": "pedro",
+        "celular": "3214848569",
+        "fijo": "6383571",
+        "jornada": "1",
+        "estado": "en proceso de ingreso",
+        "IDgrupo": null,
+        "llamadaAtencion": [],
+        "riesgo": null,
+        "rendimiento": null,
+        "fechaInicial": null,
+        "pruebaInicial": {
+            "teorica": null,
+            "practica": null,
+            "definitiva": null
+        },
+        "clave": "123456789"
+    },
+    {
+        "nombre": "santiago",
+        "apellido": "morantes",
+        "ID": "109749863",
+        "direccion": "jfldf\u00f1fasd",
+        "acudiente": "martha",
+        "celular": "3152100900",
+        "fijo": "0",
+        "jornada": "1",
+        "estado": "inscrito",
+        "IDgrupo": null,
+        "llamadaAtencion": [],
+        "riesgo": null,
+        "rendimiento": null,
+        "fechaInicial": "18-02-2026",
+        "pruebaInicial": {
+            "teorica": null,
+            "practica": null,
+            "definitiva": null
+        },
+        "clave": "123456789"
     }
 ]

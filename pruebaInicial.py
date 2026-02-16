@@ -23,7 +23,7 @@ def citacion():
             continue
         break
     campers=guardarLeerJSON.leerJSON("campers.json")
-    ids=[i["IDcamper"] for i in campers]
+    ids=[i["ID"] for i in campers]
     if ID not in ids:
         print("Usted no se encuentra registrado dentro de la base de datos de campers.")
         print("Por favor, primero realice el registro")
