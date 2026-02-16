@@ -30,17 +30,17 @@ def registrarCamper():
     #ID
     while(True):
         bandera=1
-        camper["IDcamper"]=input("digite su numero de ID: ").strip()
-        if not camper["IDcamper"].isdigit():
+        camper["ID"]=input("digite su numero de ID: ").strip()
+        if not camper["ID"].isdigit():
             print("digite unicamente numeros ")
             continue
-        if not 8<=len(camper["IDcamper"])<=10:
+        if not 8<=len(camper["ID"])<=10:
             print("El ID debe tener entre 8 y 10 numeros")
             continue
         if campers:#mira si la lista está vacia
-            IDs=[i["IDcamper"] for i in campers]#Lista de todos los ID de los campers
+            IDs=[i["ID"] for i in campers]#Lista de todos los ID de los campers
             for i in IDs:
-                if camper["IDcamper"]==i:
+                if camper["ID"]==i:
                     print("este numero de ID ya está registrado en el sistema. intentelo nuevamente")
                     bandera=0
                     break

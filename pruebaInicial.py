@@ -36,7 +36,7 @@ def citacion():
             fechaCita=fechaActual+timedelta(days=1)
         fechaCita=fechaCita.strftime("%d-%m-%Y")
         for i in campers:
-            if i["IDcamper"]==ID:
+            if i["ID"]==ID:
                 if i["fechaInicial"]!= None:
                     print("usted ya tiene asignada la fecha de presentacion de la prueba inicial")
                     print(f"La fecha es: {i["fechaInicial"]}")

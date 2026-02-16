@@ -2,7 +2,7 @@
     {
         "nombre": "juan",
         "apellido": "gonzalez",
-        "IDcamper": "1098787690",
+        "ID": "1098787690",
         "direccion": "diagonal 12 #60-30",
         "acudiente": "pedro",
         "celular": "3214848503",
@@ -24,7 +24,7 @@
     {
         "nombre": "Julieth",
         "apellido": "Rojas",
-        "IDcamper": "1096069034",
+        "ID": "1096069034",
         "direccion": "Barrio el carmen",
         "acudiente": "Otoniel",
         "celular": "3112485791",
