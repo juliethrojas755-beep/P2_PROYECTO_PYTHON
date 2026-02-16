@@ -1,4 +1,26 @@
+def menu_principal():
+   while True:
+     print ("\n--------CAMPUSLANDS------")
+     print("1. Camper")
+     print ("2. Trainer")
+     print ("3. Coordinacion")
+     print ("4. Salir")
 
+     opcion=input ("Seleccione una opcion: ")
+
+     match opcion:
+       
+       case 1:
+         menu_camper()
+       case 2:
+         menu_trainer()
+       case 3:
+         menu_coordinacion()
+       case 4: 
+         print ("Saliendo del sistema....")
+         break
+       case _:
+         print ("Opcion invalidad")
 
 def  menu_inscripcion ():
 
