@@ -1,18 +1,16 @@
 
-from json_utils import leer_json
 
-def leer_campers():
-     return leer_json("campers.json")
 
-def buscar_camper(id_camper):
-    campers = leer_campers
+
+def buscar_camper_por_id(ID):
+    campers = leerJSON("campers.json")
     for c in campers:
-        if c["IDcamper"] == id_camper:
+        if c["ID"] == ID:
             return c
     return None
 
 def menu_ver_notas(id_camper):
-    camper = buscar_camper(id_camper)
+    camper = buscar_camper_por_id(ID)
 
     if camper is None:
         print(" Camper no encontrado")
@@ -41,17 +39,18 @@ def menu_ver_notas(id_camper):
 
         opcion = input("Seleccione una opción: ")
 
-        if opcion == "1":
-            ver_notas_generales(camper)
+        match opcion:
+            case "1":
+             ver_notas_generales("camper")
+        
+            case "2":
+                ver_notas_por_modulo("camper")
+            case "3":
+                break
+            case  _:
+                print("opcion invalida")
 
-        elif opcion == "2":
-            ver_notas_por_modulo(camper)
 
-        elif opcion == "3":
-            break
-
-        else:
-            print(" Opción inválida")
 
 def ver_notas_generales(camper):
     print("\n NOTAS GENERALES")
