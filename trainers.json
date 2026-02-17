@@ -3,7 +3,7 @@
      "ID":"91256838",
      "nombre": "Pedro ",
      "clave" :"123456789",
-     "especialidad": "Nodel JS, Java, CH",
+     "especialidad": "NodeJS, Java",
      "horario":{
         "1":[null,"6am - 10am"],
         "2":[null,"10am - 2pm"],

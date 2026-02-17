@@ -1,0 +1,88 @@
+[   
+    {"rutas":["NodelJS","Java","Netcore"]},
+    
+    {"modulos":[
+                    {   
+                        "nombre":"Fundamentos",
+                        "descripcion":"Fundamentos de programación (Introducción a la algoritmia, PSeInt y Python",
+                        "notas":[
+                                    { 
+                                        
+                                        "ID":null,
+                                        "IDgrupo":null,
+                                        "nota teorica":null,
+                                        "nota practica":null,
+                                        "nota actividades":null,
+                                        "nota final": null
+
+                                    }
+                                ]
+                    },
+                    {   
+                        "nombre":"Web",
+                        "descripcion":"Programación Web (HTML, CSS y Bootstrap)",
+                        "notas":[
+                                    { 
+                                        
+                                        "ID":null,
+                                        "IDgrupo":null,
+                                        "nota teorica":null,
+                                        "nota practica":null,
+                                        "nota actividades":null,
+                                        "nota final": null
+
+                                    }
+                                ]
+                    },
+                    {   
+                        "nombre":"formal",
+                        "descripcion":"Programación formal (Java, JavaScript, C#).",
+                        "notas":[
+                                    { 
+                                        
+                                        "ID":null,
+                                        "IDgrupo":null,
+                                        "nota teorica":null,
+                                        "nota practica":null,
+                                        "nota actividades":null,
+                                        "nota final": null
+
+                                    }
+                                ]
+                    },
+                    {   
+                        "nombre":"BasesDeDatos",
+                        "descripcion":"Bases de datos (Mysql, MongoDb y Postgresql). Cada ruta tiene un SGDB principal y un alternativo.",
+                        "notas":[
+                                    { 
+                                        
+                                        "ID":null,
+                                        "IDgrupo":null,
+                                        "nota teorica":null,
+                                        "nota practica":null,
+                                        "nota actividades":null,
+                                        "nota final": null
+
+                                    }
+                                ]
+                    },
+                    {   
+                        "nombre":"Backend",
+                        "descripcion":"Backend (NetCore, Spring Boot, NodeJS y Express).",
+                        "notas":[
+                                    { 
+                                        
+                                        "ID":null,
+                                        "IDgrupo":null,
+                                        "nota teorica":null,
+                                        "nota practica":null,
+                                        "nota actividades":null,
+                                        "nota final": null
+
+                                    }
+                                ]
+                    }
+                    
+                ]
+    }
+]
