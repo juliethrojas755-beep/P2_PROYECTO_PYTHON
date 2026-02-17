@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial
+import inicioSesion, ingresoDatosCamper, pruebaInicial,solicitud
 #capa 1
 def menu_principal():
    while True:
@@ -101,7 +101,7 @@ def menu_sesion_camper(ID):
       case "3": 
         menu_ver_notas(ID)
       case "4":
-        print ("Retiro voluntario solicitado (:)")
+        solicitud.Retiro(ID)
       case "5":
         break
       case _:
