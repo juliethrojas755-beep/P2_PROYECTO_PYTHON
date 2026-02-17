@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial
+import inicioSesion, ingresoDatosCamper, pruebaInicial,solicitud
 #capa 1
 def menu_principal():
    while True:
@@ -15,12 +15,14 @@ def menu_principal():
        case "1":
          menu_camper(opcion)
        case "2":
-         if inicioSesion.iniciarSesion(opcion):
-          menu_trainer()
+         validacion,ID=inicioSesion.iniciarSesion(opcion)
+         if validacion:
+          menu_trainer(ID)
          else: 
            print("Ingreso denegado. Intentelo nuevamente")
        case "3":
-         if inicioSesion.iniciarSesion(opcion):
+         validacion,_=inicioSesion.iniciarSesion(opcion)
+         if validacion:
           menu_coordinacion()
          else: 
            print("Ingreso denegado. Intentelo nuevamente")
@@ -47,9 +49,9 @@ def menu_camper(opcionAnterior):
       case "2":
         print ("Imformacion personal")
       case "3":
-        print(opcion)
-        if inicioSesion.iniciarSesion(opcionAnterior):
-          menu_sesion_camper ()
+        validacion,ID=inicioSesion.iniciarSesion(opcionAnterior)
+        if validacion:
+          menu_sesion_camper (ID)
         else: 
            print("Ingreso denegado. Intentelo nuevamente")
       case "4":
@@ -73,15 +75,14 @@ def  menu_inscripcion ():
        case "2":
         pruebaInicial.citacion()
        case "3": 
-        print ("Revisar fecha prueba inicial (:)")
         pruebaInicial.revisarCitacion()
        case "4":
          break
        case _:
          print ("Opcion invalida")
 
-#submenu Camper.iniciarSesion (opcion=3)
-def menu_sesion_camper():
+#submenu Camper.iniciarSesion (Camper opcion=3 )
+def menu_sesion_camper(ID):
   while True:
     print ("----SESION CAMPER-----")
     print ("1.Realizar prueba inicial")
@@ -94,21 +95,21 @@ def menu_sesion_camper():
 
     match opcion:
       case "1":
-        print ("Prueba inicial (:)")
+        pruebaInicial.realizacionPrueba(ID)
       case "2":
         print ("Horario (:)")
       case "3": 
-        menu_ver_notas
+        menu_ver_notas(ID)
       case "4":
-        print ("Retiro voluntario solicitado (:)")
+        solicitud.Retiro(ID)
       case "5":
         break
       case _:
         print ("Opcion invalida")
 
-def menu_ver_notas():
+def menu_ver_notas(ID):
    while True:
-      print ("|n----VER NOTAS----")
+      print ("----VER NOTAS----")
       print ("1. General ")
       print ("2. Por modulo")
       print ("3. Regresar")
@@ -187,8 +188,8 @@ def menu_modulo_academico():
         break
       case _:
         print ("Opcion invalida")
-
-def menu_trainer():
+#TRAINER
+def menu_trainer(ID):
   while True:
     print ("------MENU TRAINER-----")
     print ("1. Informacion personal")
@@ -198,14 +199,14 @@ def menu_trainer():
     opcion=input ("Seleccione una opcion:")
     match opcion:
       case "1":
-        print("Imformacion personal ()")
+        print("Imformacion personal (ID)")
       case "2":
         menu_modulo_academico ()
       case "3":
         break
       case _:
         print("Opcion invalida")
-
+#COORDINADOR
 def menu_coordinacion():
   while True:
     print ("------MENU COORDINACION-----")

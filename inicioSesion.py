@@ -14,12 +14,11 @@ def validacion(datos):
             continue
         break 
     for i in datos:
-        print(i["nombre"])
         if ID==i["ID"] and clave==i["clave"]:
             print("-"*30)
             print("ingreso autorizado")
             print("-"*30)
-            return True
+            return True,ID
     return False
 
 
