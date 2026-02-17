@@ -43,6 +43,6 @@ def actualizar_trainer ():
                 case "_":
                     print ("Opcion invalida")
                     return
-    guardarLeerJSON.guardarJSON("traiers.json", trainers)
+    guardarLeerJSON.guardarJSON("trainers.json", trainers)
     print ("Modifcacion exitosa")
 actualizar_trainer()
