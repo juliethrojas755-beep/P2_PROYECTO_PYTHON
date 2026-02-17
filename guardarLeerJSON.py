@@ -2,7 +2,7 @@ import json
 
 def leerJSON(nombreArchivo):
     try:
-        with open(nombreArchivo,"r") as archivo:
+        with open(nombreArchivo,"r",encoding="utf-8") as archivo:
             return json.load(archivo)
     except FileNotFoundError:
         return []

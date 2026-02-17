@@ -1,9 +1,6 @@
 
 from json_utils import leer_json
 
-
-
-
 def leer_campers():
      return leer_json("campers.json")
 

@@ -283,11 +283,11 @@ def coordinadorCRUDCamperActualizar():
     
     match opcion:
       case "1":
-        print("crear")
+        print("Modificar cualquier dato de un camper. Dicho camper se busca por ID")
       case "2":
-        print("mostrar")
+        print("Rendimiento y riesgo acumulado despues de que salga la nota de cada modulo")
       case "3":
-        print("actualizar")
+        print("Aprobar los inscritos que pasaron la prueba")
       case "4":
         break
       case _:
