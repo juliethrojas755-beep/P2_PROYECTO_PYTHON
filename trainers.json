@@ -3,7 +3,7 @@
      "ID":"91256838",
      "nombre": "Pedro ",
      "clave" :"123456789",
-     "especialidad": "NodeJS, Java",
+     "especialidad": ["Java", "NodeJS"],
      "horario":{
         "1":[null,"6am - 10am"],
         "2":[null,"10am - 2pm"],
@@ -14,7 +14,7 @@
      "ID": "1059689436",
      "nombre": "Edwin",
      "clave":"123456789",
-     "especialidad": "Java , Netcore",
+     "especialidad": ["Java" , "Netcore"],
      "horario": {
         "1":[null,"6am - 10am"],
         "2":[null,"10am - 2pm"] }
@@ -23,7 +23,7 @@
      "ID": "934587032",
      "nombre": "Jhover",
      "clave": "123456789",
-     "especialidad": "Java , Netcore",
+     "especialidad": ["Java" , "Netcore"],
      "horario":{
         "1":[null,"6am - 10am"],
         "2":[null,"10am - 2pm"]
@@ -33,7 +33,7 @@
         "ID": "37492855",
         "nombre": "Cristian",
         "clave": "123456789",
-        "especialidad":"Java, NodelJS",
+        "especialidad":["Java", "NodeJS"],
         "horario":{
             "2":[null,"10am - 2pm"],
             "3":[null,"2pm - 6pm"]
@@ -44,7 +44,7 @@
         "ID" :"47239055",
         "nombre":"Carlos",
         "clave": "123456789",
-        "especialidad": "Java",
+        "especialidad": ["Java"],
         "horario":{
             "3":[null,"2pm - 6pm"],
             "4":[null,"6pm - 10pm"]
