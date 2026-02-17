@@ -224,7 +224,7 @@ def menu_coordinacion(ID):
       case "1":
         print ("Crud trainer ()")
       case "2":
-        print ("Crud camper ()")
+        coordinadorCRUDCamper()
       case "3": 
         print("Modulo de reportes")
       case "4":
@@ -237,5 +237,61 @@ def menu_coordinacion(ID):
         break
       case _:
         print ("Opcion invalida")
+        
+def coordinadorCRUDCamper():
+  while(True):
+    print("-"*60)
+    print("\t*** Espacio CRUD del camper ***")
+    print("-"*60)
+    
+    print("""\nDigite una de las siguientes opciones 
+          1.crear camper
+          2.mostrar camper
+          3.actualizar camper
+          4.eliminar camper
+          5.regresar""")
+    
+    opcion=input("escriba la respuesta aqui:")
+    
+    match opcion:
+      case "1":
+        print("crear")
+      case "2":
+        print("mostrar")
+      case "3":
+        print("actualizar")
+      case "4":
+        print("eliminar")
+      case "5":
+        break
+      case _:
+        print("te equivocaste, vuelve a intentarlo")
+    
+def coordinadorCRUDCamperActualizar():
+  while(True):
+    print("-"*60)
+    print("\t*** Espacio para actualizar el camper ***")
+    print("-"*60)
+    
+    print("""\nDigite una de las siguientes opciones 
+1.Modificar cualquier dato de un camper. Dicho camper se busca por ID.
+2.Rendimiento y riesgo acumulado despues de que salga la nota de cada modulo
+3.Aprobar los inscritos que pasaron la prueba
+4.regresar""")
+    
+    opcion=input("escriba la respuesta aqui:")
+    
+    match opcion:
+      case "1":
+        print("crear")
+      case "2":
+        print("mostrar")
+      case "3":
+        print("actualizar")
+      case "4":
+        break
+      case _:
+        print("te equivocaste, vuelve a intentarlo")
+    
 menu_principal()
         
