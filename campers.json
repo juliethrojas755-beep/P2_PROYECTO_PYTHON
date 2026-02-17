@@ -15,8 +15,8 @@
         "rendimiento": null,
         "fechaInicial": "18-02-2026",
         "pruebaInicial": {
-            "teorica": null,
-            "practica": null,
+            "teorica": 29,
+            "practica": 20,
             "definitiva": null
         },
         "clave": "123456789"
