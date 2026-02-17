@@ -69,13 +69,12 @@ def  menu_inscripcion ():
       opcion = input ("Seleccione una opcion: ")
       match opcion:
        case "1":
-        print("Ingreso de identidad (:) ")
         ingresoDatosCamper.registrarCamper()
        case "2":
-        print("Agendar prueba inicial (:)")
         pruebaInicial.citacion()
        case "3": 
         print ("Revisar fecha prueba inicial (:)")
+        pruebaInicial.revisarCitacion()
        case "4":
          break
        case _:
