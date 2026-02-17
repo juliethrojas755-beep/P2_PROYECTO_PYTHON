@@ -2,7 +2,7 @@
     {
      "ID":"91256838",
      "nombre": "Pedro ",
-     "clave " :"123456789",
+     "clave" :"123456789",
      "especiallidad": "Nodel JS, Java, CH",
      "horario":{
         "6am - 10am":null,
@@ -12,51 +12,51 @@
     {
      "ID": "1059689436",
      "nombre": "Edwin",
-     "clave ":"123456789",
+     "clave":"123456789",
      "especiallidad": "Java , Netcore",
      "horario": {
-        "6am - 10am":null,
-        "10am - 2pm " :null }
+        "1":[null,"6am - 10am"],
+        "2":[null,"10am - 2pm"] }
     },
     {
      "ID": "934587032",
      "nombre": "Jhover",
-     "clave ": "123456789",
+     "clave": "123456789",
      "especiallidad": "Java , Netcore",
      "horario":{
-        "6am - 10am":null,
-        "10am - 2pm ":null
+        "1":[null,"6am - 10am"],
+        "2":[null,"10am - 2pm"]
      }
     },
     {
         "ID": "37492855",
         "nombre": "Cristian",
-        "clave ": "123456789",
+        "clave": "123456789",
         "especiallidad":"Java, NodelJS",
         "horario":{
-            "10am - 2pm ":null,
-            "2pm - 6pm":null
+            "2":[null,"10am - 2pm"],
+            "3":[null,"2pm - 6pm"]
         }
 
     },
     {
         "ID" :"47239055",
         "nombre":"Carlos",
-        "clave ": "123456789",
+        "clave": "123456789",
         "especiallidad": "Java",
         "horario":{
-            "2pm - 6pm":null,
-            "6pm - 10pm":null
+            "3":[null,"2pm - 6pm"],
+            "4":[null,"6pm - 10pm"]
         }
     },
     {
-        "ID":"9134569",
+        "ID":"91345698",
         "nombre": "David",
-        "clave ":"123456789",
+        "clave":"123456789",
         "especiallidad": "Java",
         "horario": {
-            "6am - 10am":null,
-            "10am - 2pm ":null
+            "2":[null,"10am - 2pm"],
+            "3":[null,"2pm - 6pm"]
         }
     }
 ]
