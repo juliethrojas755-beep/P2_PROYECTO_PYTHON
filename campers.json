@@ -86,5 +86,27 @@
             "definitiva": null
         },
         "clave": "123456789"
+    },
+    {
+        "nombre": "juan david",
+        "apellido": "marin",
+        "ID": "1023162567",
+        "direccion": "calle 60# 20-33",
+        "acudiente": "diana",
+        "celular": "3203530698",
+        "fijo": "0",
+        "jornada": "1",
+        "estado": "en proceso de ingreso",
+        "IDgrupo": null,
+        "llamadaAtencion": [],
+        "riesgo": null,
+        "rendimiento": null,
+        "fechaInicial": null,
+        "pruebaInicial": {
+            "teorica": null,
+            "practica": null,
+            "definitiva": null
+        },
+        "clave": "123456789"
     }
 ]
