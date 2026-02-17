@@ -77,8 +77,8 @@ def registrarCamper():
     while(True):
         print("Campusland cuenta con 2 jornadas, las cuales son:")
         print(f"1. Mañana (6am-2pm)\n2.Tarde(2pm-10pm)")
-        camper["jornada"]=input(f"Digite el numero de la jornada que le interesa.\ndigite 0 en caso de que ambas jornadas le sirvan: ")
-        if camper["jornada"] in ["0","1","2"]:
+        camper["jornada"]=input(f"Digite el numero de la jornada que le interesa.")
+        if camper["jornada"] in ["1","2"]:
             break
         else:
             print("ERROR:Digitó una opcion invalida. Intentelo de nuevo")

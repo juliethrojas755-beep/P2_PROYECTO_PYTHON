@@ -1,40 +1,47 @@
+import guardarLeerJSON
+def ver_info_camper():
+    print("-"*80)
+    print(f"\t----INFORMACIÓN PERSONAL CAMPER----")
+    print("-"*80)
+    ID=input("digite su ID:")
+    campers=guardarLeerJSON.leerJSON("campers.json")
+    for i in campers:
+        if i["ID"]==ID:
+            print(" ")
+            print(f"Nombre: {i['nombre']} {i['apellido']}")
+            print(f"ID: {i['ID']}")
+            print(f"Estado: {i['estado']}")
+            print(f"Direccion: {i['direccion']}")
+            print(f"Acudiente: {i['acudiente']}")
+            print(f"Celular: {i['celular']}")
+            print(f"Jornada: {"Mañana (6am-2pm)" if i.get("jornada")=="1" else "Tarde(2pm-10pm)" }")
+            break
 
-def ver_info_camper(camper):
-    print("----INFORMACIÓN PERSONAL CAMPER----")
-    print(f"ID: {camper['IDcamper']}")
-    print(f"Nombre: {camper['nombre']} {camper['apellido']}")
-    print(f"Estado: {camper['estado']}")
-    print(f"Jornada: {camper.get('jornada', 'No asignada')}")
-
-def ver_info_trainer(trainer):
-    print("----- INFORMACIÓN PERSONAL TRAINER----")
-    print(f"ID: {trainer['IDtrainer']}")
-    print(f"Nombre: {trainer['nombre']}")
-    print(f"Especialidad: {trainer['especialidad']}")
+def ver_info_trainer(ID):
+    trainers=guardarLeerJSON.leerJSON("trainers.json")
+    for i in trainers:
+        if i["ID"]==ID:
+            print("----- INFORMACIÓN PERSONAL TRAINER----")
+            print(f"ID: {i['ID']}")
+            print(f"Nombre: {i['nombre']}")
+            print(f"Especialidad: {i['especialidad']}")
+            print("Horario disponible:")
+            for j in i["horario"]:
+                if i["horario"][j][0] is None:
+                    print(f"{i["horario"][j][1]}: No asignado")
+                else:
+                    print(f"{i["horario"][j][1]} asignado al grupo #{i["horario"][j][0]}")
+        break
     
-    if trainer.get("horario") is None:
-        print("Horario: No asignado")
-    else:
-        print(f"Horario: {trainer['horario']}")
-    
 
-def ver_info_coordinacion(coord):
-    print("----INFORMACIÓN PERSONAL COORDINACIÓN----")
-    print(f"Nombre: {coord['nombre']}")
-    print("Rol: Coordinador académico")
+def ver_info_coordinacion(ID):
+    coordinador=guardarLeerJSON.leerJSON("coordinador.json")
+    for i in coordinador:
+        if i["ID"]==ID:
+            print("----INFORMACIÓN PERSONAL COORDINACIÓN----")
+            print(f"Nombre: {i['nombre']}")
+            print("Rol: Coordinador académico")
+            break
 
-def ver_info_personal(usuario, rol):
-
-    if rol == "camper":
-        ver_info_camper(usuario)
-
-    elif rol == "trainer":
-        ver_info_trainer(usuario)
-
-    elif rol == "coordinacion":
-        ver_info_coordinacion(usuario)
-
-    else:
-        print(" Rol no válido")
 
 

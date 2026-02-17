@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial,solicitud
+import inicioSesion, ingresoDatosCamper, pruebaInicial,solicitud,informacion_personal
 #capa 1
 def menu_principal():
    while True:
@@ -21,9 +21,9 @@ def menu_principal():
          else: 
            print("Ingreso denegado. Intentelo nuevamente")
        case "3":
-         validacion,_=inicioSesion.iniciarSesion(opcion)
+         validacion,ID=inicioSesion.iniciarSesion(opcion)
          if validacion:
-          menu_coordinacion()
+          menu_coordinacion(ID)
          else: 
            print("Ingreso denegado. Intentelo nuevamente")
        case "4": 
@@ -47,7 +47,7 @@ def menu_camper(opcionAnterior):
       case "1":
         menu_inscripcion()
       case "2":
-        print ("Imformacion personal")
+        informacion_personal.ver_info_camper()
       case "3":
         validacion,ID=inicioSesion.iniciarSesion(opcionAnterior)
         if validacion:
@@ -199,7 +199,7 @@ def menu_trainer(ID):
     opcion=input ("Seleccione una opcion:")
     match opcion:
       case "1":
-        print("Imformacion personal (ID)")
+        informacion_personal.ver_info_trainer(ID)
       case "2":
         menu_modulo_academico ()
       case "3":
@@ -207,7 +207,7 @@ def menu_trainer(ID):
       case _:
         print("Opcion invalida")
 #COORDINADOR
-def menu_coordinacion():
+def menu_coordinacion(ID):
   while True:
     print ("------MENU COORDINACION-----")
     print ("1. Trainer (CRUD)")
@@ -215,7 +215,8 @@ def menu_coordinacion():
     print ("3.Modulo Reportes")
     print ("4.Modulo de matricula")
     print ("5. Agregar ruta")
-    print ("6. Salir")
+    print ("6. informacion personal")
+    print ("7. Salir")
 
     opcion= input ("Seleccione una opcion: ")
 
@@ -231,6 +232,8 @@ def menu_coordinacion():
       case "5":
         print ("Agregando ruta")
       case "6":
+        informacion_personal.ver_info_coordinacion(ID)
+      case "7":
         break
       case _:
         print ("Opcion invalida")
