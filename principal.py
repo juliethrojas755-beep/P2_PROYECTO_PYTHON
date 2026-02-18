@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes, ver_notas, mostrar_capers_crud
+import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes, ver_notas, mostrar_capers_crud, eliminar_camper_crud, crear_camper_crud
 #capa 1
 def menu_principal():
    while True:
@@ -302,13 +302,13 @@ def coordinadorCRUDCamper():
     
     match opcion:
       case "1":
-        print("crear")
+        crear_camper_crud.crear_camper()
       case "2":
         mostrar_capers_crud.mostrar_campers()
       case "3":
         coordinadorCRUDCamperActualizar()
       case "4":
-        print("eliminar")
+        eliminar_camper_crud.eliminar_camper()
       case "5":
         break
       case _:
