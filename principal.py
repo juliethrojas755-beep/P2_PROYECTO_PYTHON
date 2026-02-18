@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones
+import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes
 #capa 1
 def menu_principal():
    while True:
@@ -226,7 +226,7 @@ def menu_coordinacion(ID):
       case "2":
         coordinadorCRUDCamper()
       case "3": 
-        print("Modulo de reportes")
+        CoordinadorReporte()
       case "4":
         print ("Modulo de matricula")
       case "5":
@@ -237,7 +237,54 @@ def menu_coordinacion(ID):
         break
       case _:
         print ("Opcion invalida")
-        
+
+def CoordinadorReporte():
+    while True:
+        print("\n========== MÓDULO REPORTE ==========")
+        print("1. Listar los campers en estado de inscrito")
+        print("2. Listar los campers que aprobaron el examen inicial")
+        print("3. Listar los entrenadores que trabajan con CampusLands")
+        print("4. Listar los campers con bajo rendimiento")
+        print("5. Listar campers y trainers asociados a una ruta de entrenamiento")
+        print("6. Mostrar cuantos campers perdieron y aprobaron cada módulo")
+        print("7. Consultar campers en riesgo alto")
+        print("8. Regresar")
+
+        opcion = input("Seleccione una opción: ")
+
+        match opcion:
+            case "1":
+                coordinadorReportes.campers_inscritos()
+
+            case "2":
+                print("\n[REPORTE] Campers que aprobaron el examen inicial")
+
+            case "3":
+                print("\n[REPORTE] Entrenadores que trabajan con CampusLands")
+
+            case "4":
+                print("\n[REPORTE] Campers con bajo rendimiento")
+
+            case "5":
+                print("\n[REPORTE] Campers y trainers asociados a una ruta")
+                # Lógica aquí
+
+            case "6":
+                print("\n[REPORTE] Cantidad de campers que aprobaron y perdieron módulos")
+                # Lógica aquí
+
+            case "7":
+                print("\n[REPORTE] Campers en riesgo alto")
+                # Lógica aquí
+
+            case "8":
+                print("\nRegresando al menú principal...")
+                break
+
+            case _:
+                print("\n[ERROR] Opción no válida. Intente nuevamente.")
+
+
 def coordinadorCRUDCamper():
   while(True):
     print("-"*60)
