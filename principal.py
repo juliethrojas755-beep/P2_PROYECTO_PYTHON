@@ -254,35 +254,31 @@ def CoordinadorReporte():
 
         match opcion:
             case "1":
-                coordinadorReportes.campers_inscritos()
+                coordinadorReportes.campersInscritos()
 
             case "2":
-                print("\n[REPORTE] Campers que aprobaron el examen inicial")
+                coordinadorReportes.campersAprobaronExamen()
 
             case "3":
-                print("\n[REPORTE] Entrenadores que trabajan con CampusLands")
-
+                coordinadorReportes.entrenadoresCampusLands()
             case "4":
-                print("\n[REPORTE] Campers con bajo rendimiento")
+                coordinadorReportes.campersRendimientoBajo()
 
             case "5":
-                print("\n[REPORTE] Campers y trainers asociados a una ruta")
-                # Lógica aquí
+                print("\nCampers y trainers asociados a una ruta")
 
             case "6":
-                print("\n[REPORTE] Cantidad de campers que aprobaron y perdieron módulos")
-                # Lógica aquí
+                print("\nCantidad de campers que aprobaron y perdieron módulos")
 
             case "7":
-                print("\n[REPORTE] Campers en riesgo alto")
-                # Lógica aquí
+                print("\nCampers en riesgo alto")
 
             case "8":
                 print("\nRegresando al menú principal...")
                 break
 
             case _:
-                print("\n[ERROR] Opción no válida. Intente nuevamente.")
+                print("\nOpción no válida. Intente nuevamente.")
 
 
 def coordinadorCRUDCamper():
