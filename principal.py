@@ -254,10 +254,10 @@ def CoordinadorReporte():
 
         match opcion:
             case "1":
-                coordinadorReportes.campers_inscritos()
+                coordinadorReportes.campersInscritos()
 
             case "2":
-                print("\n[REPORTE] Campers que aprobaron el examen inicial")
+                coordinadorReportes.campersAprobaronExamen()
 
             case "3":
                 print("\n[REPORTE] Entrenadores que trabajan con CampusLands")
