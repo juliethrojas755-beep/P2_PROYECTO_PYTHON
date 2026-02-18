@@ -112,14 +112,5 @@
                 "2pm - 6pm"
             ]
         }
-    },
-    {
-        "ID": "1096069034",
-        "nombre": "Julieth ",
-        "apellido": "Rojas",
-        "celular": "312485792",
-        "especialidad": "Java",
-        "estado": "activo",
-        "clave": "12345678"
     }
 ]
