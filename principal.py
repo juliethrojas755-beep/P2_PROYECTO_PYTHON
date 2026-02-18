@@ -260,22 +260,18 @@ def CoordinadorReporte():
                 coordinadorReportes.campersAprobaronExamen()
 
             case "3":
-                print("\n[REPORTE] Entrenadores que trabajan con CampusLands")
-
+                coordinadorReportes.entrenadoresCampusLands()
             case "4":
-                print("\n[REPORTE] Campers con bajo rendimiento")
+                coordinadorReportes.campersRendimientoBajo()
 
             case "5":
                 print("\n[REPORTE] Campers y trainers asociados a una ruta")
-                # Lógica aquí
 
             case "6":
                 print("\n[REPORTE] Cantidad de campers que aprobaron y perdieron módulos")
-                # Lógica aquí
 
             case "7":
                 print("\n[REPORTE] Campers en riesgo alto")
-                # Lógica aquí
 
             case "8":
                 print("\nRegresando al menú principal...")
