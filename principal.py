@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial,solicitud,informacion_personal
+import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones
 #capa 1
 def menu_principal():
    while True:
@@ -259,7 +259,7 @@ def coordinadorCRUDCamper():
       case "2":
         print("mostrar")
       case "3":
-        print("actualizar")
+        coordinadorCRUDCamperActualizar()
       case "4":
         print("eliminar")
       case "5":
@@ -283,11 +283,11 @@ def coordinadorCRUDCamperActualizar():
     
     match opcion:
       case "1":
-        print("Modificar cualquier dato de un camper. Dicho camper se busca por ID")
+        coordinadorCRUDCamperFunciones.modificarCamper()
       case "2":
         print("Rendimiento y riesgo acumulado despues de que salga la nota de cada modulo")
       case "3":
-        print("Aprobar los inscritos que pasaron la prueba")
+        coordinadorCRUDCamperFunciones.aprobarInscritos()
       case "4":
         break
       case _:
