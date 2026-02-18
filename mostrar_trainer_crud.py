@@ -23,7 +23,14 @@ def mostrar_trainer ():
                     print ("ID:", i ["ID"])
                     print ("Nombre:", i ["nombre"])
                     print ("Especialidad:", i ["especialidad"])
-                    print ("Estado:", i.get( "estado", "No definido "))
+                    print ("Horario:", i.get( "horario", "No definido "))
+                    horario= i.get ("horario",{})
+                    if horario:
+                        for dia, horas in horario.items():
+                            print (f"Dia {dia}: {horas [1]}")
+                        else:
+                            print ("No tiene horario asignado")
+                       
             case "2":
                 ID= input ("Ingrese el ID del trainer: ")
                 encontrado= False
@@ -34,7 +41,14 @@ def mostrar_trainer ():
                        print ("ID:", i ["ID"])
                        print ("Nombre:", i ["nombre" ])
                        print ("Especialidad:", i ["especialidad"])
-                       print ("Estado:", i.get ( "estado", "No definido"))
+                       print ("Horario:", i.get( "horario", "No definido "))
+                       horario= i.get ("horario",{})
+                       if horario:
+                        for dia, horas in horario.items():
+                            print (f"Dia {dia}: {horas [1]}")
+                        else:
+                            print ("No tiene horario asignado")
+                       
                        encontrado= True
                        break
                    if not encontrado:
