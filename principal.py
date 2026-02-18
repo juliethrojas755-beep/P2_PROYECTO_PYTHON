@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes, ver_notas, mostrar_capers_crud, eliminar_camper_crud, crear_camper_crud
+import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes, ver_notas, mostrar_capers_crud, eliminar_camper_crud, crear_camper_crud, actualizar_trainer_crud, crear_trainer_crud, eliminar_trainer_crud, mostrar_trainer_crud
 #capa 1
 def menu_principal():
    while True:
@@ -218,11 +218,11 @@ def menu_coordinacion(ID):
     print ("6. informacion personal")
     print ("7. Salir")
 
-    opcion= input ("Seleccione una opcion: ")
+    opcion= input ("Seleccione una opcion: ").strip()
 
     match opcion:
       case "1":
-        print ("Crud trainer ()")
+       menu_crud_trainer()
       case "2":
         coordinadorCRUDCamper()
       case "3": 
@@ -321,10 +321,10 @@ def coordinadorCRUDCamperActualizar():
     print("-"*60)
     
     print("""\nDigite una de las siguientes opciones 
-1.Modificar cualquier dato de un camper. Dicho camper se busca por ID.
-2.Rendimiento y riesgo acumulado despues de que salga la nota de cada modulo
-3.Aprobar los inscritos que pasaron la prueba
-4.regresar""")
+      1.Modificar cualquier dato de un camper. Dicho camper se busca por ID.
+      2.Rendimiento y riesgo acumulado despues de que salga la nota de cada modulo
+      3.Aprobar los inscritos que pasaron la prueba
+      4.regresar""")
     
     opcion=input("escriba la respuesta aqui:")
     
@@ -340,8 +340,9 @@ def coordinadorCRUDCamperActualizar():
       case _:
         print("te equivocaste, vuelve a intentarlo")
 
-  def menu_crud_trainer():
-    while True:
+def menu_crud_trainer():
+ print ("Entraste al crud de trainers")
+ while True:
         print("------ CRUD TRAINER ------")
         print ("1. Crear trainer")
         print("2. Mostrar trainers")
@@ -349,17 +350,17 @@ def coordinadorCRUDCamperActualizar():
         print ("4. Eliminar trainer")
         print("5. Regresar")
 
-        opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione una opción: ").strip()
 
         match opcion:
             case "1":
-                crud_trainer.crear_trainer()
+                crear_trainer_crud.crear_trainer()
             case "2":
-                crud_trainer.mostrar_trainer()
+                mostrar_trainer_crud.mostrar_trainer()
             case "3":
-                crud_trainer.actualizar_trainer()
+                actualizar_trainer_crud.actualizar_trainer()
             case "4":
-                crud_trainer.eliminar_trainer()
+                eliminar_trainer_crud.eliminar_trainer()
             case "5":
                 break
             case _:
