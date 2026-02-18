@@ -8,16 +8,16 @@
         "celular": "3214848503",
         "fijo": "0",
         "jornada": "1",
-        "estado": "inscrito",
+        "estado": "aprobado",
         "IDgrupo": null,
         "llamadaAtencion": [],
         "riesgo": null,
         "rendimiento": null,
         "fechaInicial": "19-02-2026",
         "pruebaInicial": {
-            "teorica": 82,
-            "practica": 73,
-            "definitiva": null
+            "teorica": 50,
+            "practica": 100,
+            "definitiva": 75.0
         },
         "clave": "123456789"
     },
@@ -66,8 +66,8 @@
         "clave": "123456789"
     },
     {
-        "nombre": "Andrés",
-        "apellido": "Pérez",
+        "nombre": "Andr\u00e9s",
+        "apellido": "P\u00e9rez",
         "ID": "1098787693",
         "direccion": "Avenida 80 #12-05",
         "acudiente": "Marta",
@@ -88,7 +88,7 @@
         "clave": "123456789"
     },
     {
-        "nombre": "Sofía",
+        "nombre": "Sof\u00eda",
         "apellido": "Castro",
         "ID": "1098787694",
         "direccion": "Transversal 5 #22-10",
@@ -114,7 +114,7 @@
         "apellido": "Ruiz",
         "ID": "1098787695",
         "direccion": "Manzana B Casa 4",
-        "acudiente": "Lucía",
+        "acudiente": "Luc\u00eda",
         "celular": "3119876543",
         "fijo": "0",
         "jornada": "1",
@@ -175,6 +175,4 @@
         },
         "clave": "123456789"
     }
-
-
 ]
