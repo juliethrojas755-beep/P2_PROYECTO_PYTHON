@@ -265,20 +265,20 @@ def CoordinadorReporte():
                 coordinadorReportes.campersRendimientoBajo()
 
             case "5":
-                print("\n[REPORTE] Campers y trainers asociados a una ruta")
+                print("\nCampers y trainers asociados a una ruta")
 
             case "6":
-                print("\n[REPORTE] Cantidad de campers que aprobaron y perdieron módulos")
+                print("\nCantidad de campers que aprobaron y perdieron módulos")
 
             case "7":
-                print("\n[REPORTE] Campers en riesgo alto")
+                print("\nCampers en riesgo alto")
 
             case "8":
                 print("\nRegresando al menú principal...")
                 break
 
             case _:
-                print("\n[ERROR] Opción no válida. Intente nuevamente.")
+                print("\nOpción no válida. Intente nuevamente.")
 
 
 def coordinadorCRUDCamper():
