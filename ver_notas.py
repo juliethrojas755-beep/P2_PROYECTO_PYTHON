@@ -80,6 +80,3 @@ def ver_notas_por_modulo(camper):
     else:
         print("Módulo no encontrado")
 
-if __name__ == "__main__":
-    ID = input("Ingrese su ID de camper: ")
-    menu_ver_notas(ID)

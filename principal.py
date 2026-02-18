@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes
+import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes, ver_notas, mostrar_capers_crud
 #capa 1
 def menu_principal():
    while True:
@@ -99,7 +99,7 @@ def menu_sesion_camper(ID):
       case "2":
         print ("Horario (:)")
       case "3": 
-        menu_ver_notas(ID)
+        ver_notas.menu_ver_notas(ID)
       case "4":
         solicitud.Retiro(ID)
       case "5":
@@ -304,7 +304,7 @@ def coordinadorCRUDCamper():
       case "1":
         print("crear")
       case "2":
-        print("mostrar")
+        mostrar_capers_crud.mostrar_campers()
       case "3":
         coordinadorCRUDCamperActualizar()
       case "4":

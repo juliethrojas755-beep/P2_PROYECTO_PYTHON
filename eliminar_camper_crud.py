@@ -9,23 +9,25 @@ def eliminar_camper():
         return
 
     ID = input("Ingrese el ID del camper a eliminar: ")
+
     camper_encontrado = None
 
-    for i in campers:
-        if i.get("ID") == ID:
-            camper_encontrado = i
+    for c in campers:
+        if c.get("ID") == ID:
+            camper_encontrado = c
             break
-        if camper_encontrado is None:
-          print("No existe un camper con ese ID")
+
+    if camper_encontrado is None:
+        print("No existe un camper con ese ID")
         return
 
-    print("----ADVERTENCIA----")
+    print("\n---- ADVERTENCIA ----")
     print("Esta acción eliminará al camper PERMANENTEMENTE")
     print("ID:", camper_encontrado.get("ID"))
     print("Nombre:", camper_encontrado.get("nombre"), camper_encontrado.get("apellido"))
     print("Estado:", camper_encontrado.get("estado"))
 
-    confirmacion = input("---¿Está seguro de eliminarlo?-- (si/no): ").lower()
+    confirmacion = input("¿Está seguro de eliminarlo? (si/no): ").lower()
 
     match confirmacion:
         case "si":
@@ -33,7 +35,6 @@ def eliminar_camper():
             guardarLeerJSON.guardarJSON("campers.json", campers)
             print("Camper eliminado correctamente")
         case "no":
-            print(" Eliminación cancelada")
+            print("Eliminación cancelada")
         case _:
-            print(" Opción inválida, eliminación cancelada")
-eliminar_camper()
+            print("Opción inválida. Eliminación cancelada")

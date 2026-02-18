@@ -28,5 +28,3 @@ def mostrar_campers():
         print("  Teórica:", prueba.get("teorica"))
         print("  Práctica:", prueba.get("practica"))
         print("  Definitiva:", prueba.get("definitiva"))
-
-mostrar_campers()
