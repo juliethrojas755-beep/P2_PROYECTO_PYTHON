@@ -61,7 +61,7 @@ def mostrar_trainer ():
 
     guardarLeerJSON.guardarJSON("traners.json", trainers)
 
-mostrar_trainer()
+
 
 
     

@@ -339,6 +339,32 @@ def coordinadorCRUDCamperActualizar():
         break
       case _:
         print("te equivocaste, vuelve a intentarlo")
+
+  def menu_crud_trainer():
+    while True:
+        print("------ CRUD TRAINER ------")
+        print ("1. Crear trainer")
+        print("2. Mostrar trainers")
+        print ("3. Actualizar trainer")
+        print ("4. Eliminar trainer")
+        print("5. Regresar")
+
+        opcion = input("Seleccione una opción: ")
+
+        match opcion:
+            case "1":
+                crud_trainer.crear_trainer()
+            case "2":
+                crud_trainer.mostrar_trainer()
+            case "3":
+                crud_trainer.actualizar_trainer()
+            case "4":
+                crud_trainer.eliminar_trainer()
+            case "5":
+                break
+            case _:
+                print("Opción inválida")
+
     
 menu_principal()
         

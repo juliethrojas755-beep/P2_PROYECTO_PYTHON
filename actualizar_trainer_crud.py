@@ -45,4 +45,4 @@ def actualizar_trainer ():
                     return
     guardarLeerJSON.guardarJSON("trainers.json", trainers)
     print ("Modifcacion exitosa")
-actualizar_trainer()
+

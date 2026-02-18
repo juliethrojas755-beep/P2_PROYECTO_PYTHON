@@ -30,4 +30,4 @@ def crear_trainer():
     guardarLeerJSON.guardarJSON("trainers.json", trainers)
     print ("Trainer creado correctamente")
 
-crear_trainer()
+

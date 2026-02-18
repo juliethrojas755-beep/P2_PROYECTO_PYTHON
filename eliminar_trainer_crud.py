@@ -39,4 +39,4 @@ def eliminar_trainer():
 
             guardarLeerJSON.guardarJSON ("trainers.json", trainers)
 
-eliminar_trainer()
+
