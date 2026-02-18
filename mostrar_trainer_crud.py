@@ -27,7 +27,7 @@ def mostrar_trainer ():
                     horario= i.get ("horario",{})
                     if horario:
                         for dia, horas in horario.items():
-                            print (f"Dia {dia}: {horas [1]}")
+                            print (f" {horas [1]}")
                         else:
                             print ("No tiene horario asignado")
                        
@@ -45,7 +45,7 @@ def mostrar_trainer ():
                        horario= i.get ("horario",{})
                        if horario:
                         for dia, horas in horario.items():
-                            print (f"Dia {dia}: {horas [1]}")
+                            print (f" {horas [1]}")
                         else:
                             print ("No tiene horario asignado")
                        
@@ -62,4 +62,6 @@ def mostrar_trainer ():
     guardarLeerJSON.guardarJSON("traners.json", trainers)
 
 mostrar_trainer()
+
+
     
