@@ -47,17 +47,20 @@ def formarGrupo(jornada):
                 contador+=1
         if jornada=="1" and contador==maximo:
             print("se han alcanzado el numero maximo de grupos de la mañana")
+            print(f"el numero de campers aprobados de la jornada de la mañana que quedaron sin grupo es: {len([i for i in grupocampers if i['estado']=='aprobado'])}")
             return
         else:
             if jornada=="2" and contador==maximo:
                 print("se han alcanzado el numero maximo de grupos de la tarde")
+                print(f"el numero de campers aprobados de la jornada de la tarde que quedaron sin grupo es: {len([i for i in grupocampers if i['estado']=='aprobado'])}")
                 return
         
         #caso base #2
-        aprobados=[i for i in grupo if i["estado"]=="aprobado"]
+        aprobados=[i for i in grupocampers if i["estado"]=="aprobado"]
         numeroGruposAbiertos=len([i for i in grupos if i["estado"]=="abierto"])
         if len(aprobados)<aulas[0]["capacidad"]["minimo"] and numeroGruposAbiertos==0:
             print("hay menos de 25 campers aprobados, los grupos son menos del numero maximo pero estan llenos")
+            print(f"el numero de campers aprobados en esta jornada que quedaron sin grupo es: {len([i for i in grupocampers if i['estado']=='aprobado'])}")
             return
     
     aprobados=[i for i in grupocampers if i["estado"]=="aprobado"]
@@ -67,7 +70,7 @@ def formarGrupo(jornada):
         return
     # caso recursivo
     #1)si #aprobados >=25 abre grupos (pasan a estado cursando)
-    if len(aprobados)>=aulas[0]["capacidad"]["minimo"]:
+    if len(aprobados)>=aulas[0]["capacidad"]["minimo"] and len(grupo)<4:
         #ruta
         listaRuta=[]
         for i in trainersjornada:
@@ -75,7 +78,7 @@ def formarGrupo(jornada):
                 if j not in listaRuta:
                     listaRuta.append(j)
         ruta=random.choice(listaRuta)
- 
+
         #horario, aula, nombre del grupo, fecha de inicio y fecha de finalizacion
         if not grupos:
             ID=100
@@ -101,6 +104,8 @@ def formarGrupo(jornada):
             else:
                 for j in ["3","4"]:
                     if i["horario"][j] == None:
+                        if j=="4" and aulas[1]["aulas"][0]["horario"]["4"]!=None:
+                            break
                         i["horario"][j]=str(ID)
                         horario=j
                         nombreAula=i["nombre"]
@@ -160,6 +165,7 @@ def formarGrupo(jornada):
             }           
         
         grupos.append(grupo)
+        print("se ha creado exitosamente el grupo "+nombre)
         guardarLeerJSON.guardarJSON("grupos.json", grupos)
         guardarLeerJSON.guardarJSON("aulaDisponibilidad.json", aulas)
         guardarLeerJSON.guardarJSON("trainers.json", trainers)
@@ -184,4 +190,3 @@ def formarGrupo(jornada):
                 guardarLeerJSON.guardarJSON("grupos.json", grupos)
                 guardarLeerJSON.guardarJSON("campers.json", campers)
                 formarGrupo(jornada)
-formarGrupo("2")

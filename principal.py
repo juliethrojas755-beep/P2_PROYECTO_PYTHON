@@ -1,4 +1,4 @@
-import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes, ver_notas, mostrar_capers_crud, eliminar_camper_crud, crear_camper_crud, actualizar_trainer_crud, crear_trainer_crud, eliminar_trainer_crud, mostrar_trainer_crud
+import inicioSesion, ingresoDatosCamper, pruebaInicial, solicitud, informacion_personal, coordinadorCRUDCamperFunciones, coordinadorReportes, ver_notas, mostrar_capers_crud, eliminar_camper_crud, crear_camper_crud, actualizar_trainer_crud, crear_trainer_crud, eliminar_trainer_crud, mostrar_trainer_crud, formarGrupos
 #capa 1
 def menu_principal():
    while True:
@@ -228,7 +228,13 @@ def menu_coordinacion(ID):
       case "3": 
         CoordinadorReporte()
       case "4":
-        print ("Modulo de matricula")
+        print ("bienvenido al modulo de matricula")
+        print("digite 1 para formar grupos o 2 para modificarlos")
+        opcionMatricula=input(":")
+        if opcionMatricula=="1":
+          jornada=input("digite 1 para jornada mañana o 2 para jornada tarde: ")
+          formarGrupos.formarGrupo(jornada)
+        
       case "5":
         print ("Agregando ruta")
       case "6":
