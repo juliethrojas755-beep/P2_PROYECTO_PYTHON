@@ -116,10 +116,15 @@ def formarGrupo(jornada):
         #trainer
         listaTrainerPrimera=[]
         for i in trainersjornada:
+            print(ruta)
             if ruta in i["especialidad"]:
+                print(i["nombre"])
                 for j in i["horario"]:
+                    print(j)
+                    
                     if j==horario and i["horario"][j][0] == None:
                         listaTrainerPrimera.append(i)
+                        print(listaTrainerPrimera)
                         break
         trainerasignado=random.choice(listaTrainerPrimera)
         trainerasignado["horario"][horario][0]=str(ID)
