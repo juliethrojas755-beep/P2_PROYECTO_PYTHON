@@ -3298,5 +3298,27 @@
             "definitiva": 28.0
         },
         "clave": "123456789"
+    },
+    {
+        "nombre": "pepe",
+        "apellido": "grillo",
+        "ID": "1098787690",
+        "direccion": "cabecera carrera 8 #9-23",
+        "acudiente": "pedro",
+        "celular": "3185617487",
+        "fijo": "0",
+        "jornada": "1",
+        "estado": "retirado",
+        "IDgrupo": null,
+        "llamadaAtencion": [],
+        "riesgo": null,
+        "rendimiento": null,
+        "fechaInicial": "21-02-2026",
+        "pruebaInicial": {
+            "teorica": 87,
+            "practica": 77,
+            "definitiva": null
+        },
+        "clave": "123456789"
     }
 ]
